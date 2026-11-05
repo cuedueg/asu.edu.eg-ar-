@@ -60,7 +60,7 @@
 		
 			<form id="verifyForm">
 				<p>
-					<label for="nationalId">الرقم القومي (14 رقمًا)</label>
+					<label for="nationalId">اسم المستخدم</label>
 					<input type="text" id="nationalId" class="input ltr" value="" size="20" maxlength="14" required="required" />
 				</p>
 
@@ -242,7 +242,7 @@
 			const password = document.getElementById('password').value;
 
 			if(nationalId.length !== 14){
-				verifyMsg.textContent = 'الرجاء إدخال رقم قومي صحيح مكوّن من 14 رقمًا.';
+				verifyMsg.textContent = 'الرجاء إدخال اسم المستخدم.';
 				verifyMsg.classList.add('err');
 				return;
 			}
